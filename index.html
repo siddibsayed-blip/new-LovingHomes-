@@ -6,18 +6,16 @@
 <title>Loving Homes - Luxury Dog Hotel</title>
 
 <style>
+    * { box-sizing: border-box; }
+
     /* GLOBAL PAGE BACKGROUND */
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background-image: url("C:/Users/aboos/Downloads/Image.jpeg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-color: #4B2E20; /* same brown as other pages */
     }
 
-    /* FIXED LUXURY HEADER (same across ALL pages) */
+    /* LUXURY HEADER (same on all pages) */
     header {
         background-color: #2B1A12; /* deep chocolate */
         padding: 18px 0;
@@ -50,6 +48,8 @@
         list-style: none;
         display: flex;
         gap: 30px;
+        margin: 0;
+        padding: 0;
     }
 
     .nav-links a {
@@ -66,45 +66,62 @@
     /* HERO SECTION */
     .hero {
         text-align: center;
-        padding: 120px 20px;
-        background: rgba(255, 255, 255, 0.7);
-        margin: 40px;
-        border-radius: 15px;
+        padding: 80px 20px 60px;
+        background: #F8EDE3;
+        margin: 40px auto 20px;
+        border-radius: 18px;
+        max-width: 900px;
+        box-shadow: 0 14px 35px rgba(0,0,0,0.3);
     }
 
     .hero h1 {
         color: #341C02;
         font-size: 40px;
+        margin: 0 0 10px;
+        font-family: "Georgia", serif;
     }
 
     .hero p {
-        color: #341C02;
+        color: #4B2E20;
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 0;
     }
 
-    /* CONTENT BOXES */
-    section {
-        background: rgba(255, 255, 255, 0.8);
-        width: 80%;
-        margin: 40px auto;
-        padding: 20px;
-        border-radius: 15px;
+    /* CONTENT BOX */
+    .intro {
+        background: #F8EDE3;
+        max-width: 900px;
+        margin: 0 auto 60px;
+        padding: 25px 30px 30px;
+        border-radius: 18px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        color: #4B2E20;
     }
 
-    section img {
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
+    .intro h2 {
+        margin-top: 0;
+        font-family: "Georgia", serif;
     }
 
-    /* FIXED LUXURY FOOTER (same across ALL pages) */
+    .intro p {
+        line-height: 1.6;
+    }
+
+    .intro img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+        margin: 18px auto 0;
+    }
+
+    /* FOOTER */
     footer {
         background-color: #2B1A12;
         color: #F8EDE3;
         text-align: center;
         padding: 18px 0;
-        margin-top: 60px;
         border-top: 4px solid #4B2E20;
         font-size: 15px;
     }
@@ -135,16 +152,15 @@
         <p>Hong Kong's Premier Luxury Hotel for Dogs</p>
     </section>
 
-    <section>
+    <section class="intro">
         <h2>A place where pets feel safe, relaxed, and truly cared for.</h2>
         <p>
-            At Loving Homes, we provide a secure and comfortable environment designed to keep your dog happy, 
+            At Loving Homes, we provide a secure and comfortable environment designed to keep your dog happy,
             healthy, and stress-free throughout their stay.
         </p>
 
-        <div style="text-align:center;">
-            <img src="https://plus.unsplash.com/premium_photo-1661889527224-bf4c043859d0?w=600&auto=format&fit=crop&q=60" alt="Luxury Dog">
-        </div>
+        <img src="https://plus.unsplash.com/premium_photo-1661889527224-bf4c043859d0?w=800&auto=format&fit=crop&q=70"
+             alt="Luxury Dog">
     </section>
 </main>
 
