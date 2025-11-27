@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Your Stay - Loving Homes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background-color: #4B2E20;
+        color: #F8EDE3;
+    }
+
+    /* ---------------- HEADER (UPDATED) ---------------- */
+    header {
+        background-color: #2B1A12;
+        padding: 15px 0;
+    }
+
+    nav {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #F8EDE3;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        color: #F8EDE3;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-links a:hover {
+        color: #C9A46A;
+    }
+
+    /* ---------------- FORM STYLES ---------------- */
+    .main-wrapper {
+        width: 90%;
+        max-width: 1200px;
+        margin: 30px auto;
+        display: flex;
+        gap: 40px;
+    }
+
+    .form-card {
+        background-color: #F8EDE3;
+        color: #2B1A12;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        flex: 2;
+    }
+
+    .sidebar {
+        background-color: #3A2418;
+        padding: 25px;
+        border-radius: 15px;
+        flex: 1.2;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 20px;
+        border-radius: 8px;
+        border: 1px solid #BCA99A;
+        background-color: #FCF5EF;
+        color: #2B1A12;
+    }
+
+    textarea {
+        height: 110px;
+        resize: none;
+    }
+
+    button {
+        background-color: #2B1A12;
+        color: #F8EDE3;
+        border: none;
+        padding: 12px 20px;
+        font-size: 17px;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #4A3428;
+    }
+
+    /* ---------------- FOOTER (UPDATED) ---------------- */
+    footer {
+        background-color: #2B1A12;
+        color: #F8EDE3;
+        text-align: center;
+        padding: 15px 10px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    footer .brand {
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <div class="logo">🐾 Loving Homes</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facilities3.html">Facilities</a></li>
+            <li><a href="packages2.html">Packages</a></li>
+            <li><a href="contactpage.html">Contact Us</a></li>
+            <li><a href="newaboutus.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="bookingpage.html">Booking</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- PAGE TITLE -->
+<section style="text-align:center; margin-top:40px;">
+    <h1 style="font-size:45px; color:#F8EDE3;">Book Your Dog’s Stay</h1>
+    <p style="font-size:18px; color:#E6D7C8;">Share a few details with us and our team will confirm your booking shortly.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="main-wrapper">
+
+    <!-- FORM CARD -->
+    <div class="form-card">
+        <h2 style="margin-top:0;">Reservation Details</h2>
+
+        <label>Dog's Name:</label>
+        <input type="text" placeholder="Enter your dog's name">
+
+        <label>Owner's Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Select Package:</label>
+        <select>
+            <option>Premium Package</option>
+            <option>Classic Package</option>
+            <option>Day Care Package</option>
+        </select>
+
+        <label>Check-In Date:</label>
+        <input type="date">
+
+        <label>Check-Out Date:</label>
+        <input type="date">
+
+        <label>Special Requests:</label>
+        <textarea placeholder="Any special instructions? (diet, behaviour, medical needs…)"></textarea>
+
+        <button type="submit">Submit Booking Request</button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Before You Book</h2>
+
+        <strong>Check-in & Check-out</strong>
+        <p>Check-in from 10 AM and check-out by 12 PM.</p>
+
+        <strong>Vaccinations</strong>
+        <p>Dogs must be up-to-date on core vaccinations.</p>
+
+        <strong>What to Bring</strong>
+        <p>Your dog’s food, toys, and any required medication.</p>
+
+        <strong>Confirmation</strong>
+        <p>We will review your request and contact you shortly.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 <span class="brand">Loving Homes</span> – Where Comfort Meets Care
+</footer>
+
+</body>
+</html>

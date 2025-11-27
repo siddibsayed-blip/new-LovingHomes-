@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Pet Hotel — Our Facilities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #4B2E20;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #F8EDE3;
+    }
+
+    /* ------------------ HEADER (MATCHES HOME PAGE) ------------------ */
+    header {
+      background-color: #2B1A12;
+      padding: 18px 0;
+      border-bottom: 4px solid #5A3B29;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #F8EDE3;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #F8EDE3;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #E0C8B0;
+    }
+
+    /* --------------------------------------------------------------- */
+
+    .facilities-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .facilities-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .facilities-header h1 {
+      font-family: "Georgia", serif;
+      font-size: 44px;
+      margin: 0;
+      color: #F8EDE3;
+    }
+
+    .facilities-header p {
+      font-family: "Georgia", serif;
+      font-size: 20px;
+      color: #E3D0C1;
+      margin-top: 8px;
+    }
+
+    .facilities-content {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 40px;
+    }
+
+    .facilities-text h2 {
+      font-family: "Georgia", serif;
+      font-size: 26px;
+      color: #F8EDE3;
+    }
+
+    .facilities-text p {
+      line-height: 1.7;
+      color: #E8D7C9;
+    }
+
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .facility-card {
+      background-color: #F8EDE3;
+      border-radius: 18px;
+      overflow: hidden;
+      color: #4B2E20;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .facility-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .facility-card-content {
+      padding: 16px 18px 20px;
+      flex-grow: 1;
+    }
+
+    .facility-card h3 {
+      font-family: "Georgia", serif;
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    .facility-card p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      color: #5A4A42;
+    }
+
+    @media (max-width: 900px) {
+      .facilities-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ------------------ FOOTER (MATCHES HOME PAGE) ------------------ */
+    footer {
+      background-color: #2B1A12;
+      padding: 18px 0;
+      margin-top: 50px;
+      border-top: 4px solid #5A3B29;
+      color: #F8EDE3;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    footer span {
+      font-weight: bold;
+      color: #ffffff;
+    }
+    /* --------------------------------------------------------------- */
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">🐾 Loving Homes</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="facilities3.html">Facilities</a></li>
+      <li><a href="packages2.html">Packages</a></li>
+      <li><a href="contactpage.html">Contact Us</a></li>
+      <li><a href="newaboutus.html">About Us</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="bookingpage.html">Booking</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="facilities-section">
+  <div class="facilities-header">
+    <h1>Our Facilities</h1>
+    <p>Where Comfort Meets Care</p>
+  </div>
+
+  <div class="facilities-content">
+
+    <div class="facilities-text">
+      <h2>Welcome to Luxury Pet Hotel</h2>
+      <p>We provide premium accommodations, top-notch care, and love for your pets. Explore our range of services designed with comfort and safety in mind.</p>
+    </div>
+
+    <div class="facilities-grid">
+
+      <!-- Card 1 -->
+      <div class="facility-card">
+        <img src="https://images.unsplash.com/photo-1570567136605-2932a1b44e44?w=1000&auto=format&fit=crop&q=80">
+        <div class="facility-card-content">
+          <h3>Luxury Suites</h3>
+          <p>Warm, cozy suites offering privacy and comfort for your pet.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="facility-card">
+        <img src="https://images.unsplash.com/photo-1711665722242-b3ef15a573e1?w=1000&auto=format&fit=crop&q=80">
+        <div class="facility-card-content">
+          <h3>Outdoor Play Area</h3>
+          <p>Spacious outdoor zone for active play and socializing.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="facility-card">
+        <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=1000&q=80">
+        <div class="facility-card-content">
+          <h3>Grooming & Spa</h3>
+          <p>Professional grooming and spa services to keep your pet looking and feeling great.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="facility-card">
+        <img src="https://images.unsplash.com/photo-1722247522704-b8209a722e08?w=600&auto=format&fit=crop&q=60">
+        <div class="facility-card-content">
+          <h3>Pet Comfort Zone</h3>
+          <p>Cozy indoor areas for rest, cuddles and calm time.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="facility-card">
+        <img src="https://media.istockphoto.com/id/2201276753/photo/veterinarian-examining-a-dog-in-her-clinic.webp?a=1&b=1&s=612x612&w=0&k=20&c=jokFEqtIP5x_C4Nxb0wpG-1kWBI-izrxQbuGGJVDxWk=">
+        <div class="facility-card-content">
+          <h3>Vet On Site</h3>
+          <p>In-house veterinary services for health and wellness checks.</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="facility-card">
+        <img src="https://media.istockphoto.com/id/485616187/photo/veterinarian-talking-on-the-phone.webp?a=1&b=1&s=612x612&w=0&k=20&c=1P8FETptTQSkblj3XnJGkcgE3U2XXiiuyk20nUv_lD0=">
+        <div class="facility-card-content">
+          <h3>Vet On Call</h3>
+          <p>Ready-call veterinary assistance and support anytime.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>Loving Homes</span> — Where Comfort Meets Care</p>
+</footer>
+
+</body>
+</html>

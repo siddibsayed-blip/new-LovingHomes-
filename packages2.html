@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Luxury Dog Packages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #4B2E20; /* Luxury brown */
+        font-family: "Georgia", serif;
+        color: #F8EDE3;
+    }
+
+    /* ======================================================
+          UNIFIED HEADER (Same as all other pages)
+       ====================================================== */
+    header {
+        background-color: #2B1A12;
+        padding: 18px 40px;
+        border-bottom: 4px solid #563A27;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #F8EDE3;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        color: #F8EDE3;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Georgia", serif;
+    }
+
+    .nav-links a:hover {
+        color: #C9A46A;
+    }
+
+
+    /* PAGE TITLE */
+    .page-title {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .page-title h1 {
+        font-size: 45px;
+        margin: 0;
+        color: #F8EDE3;
+    }
+
+    /* MAIN CONTAINER */
+    .packages-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* PACKAGE CARD */
+    .package-card {
+        background-color: #F8EDE3;
+        color: #2B1A12;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    .package-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .package-card ul {
+        margin-top: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .package-btn {
+        margin-top: 20px;
+        background-color: #2B1A12;
+        color: #F8EDE3;
+        border: none;
+        padding: 12px 26px;
+        font-size: 17px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-family: "Georgia", serif;
+    }
+
+    .package-btn:hover {
+        background-color: #563A27;
+    }
+
+    /* GRID FOR THE MIDDLE TWO CARDS */
+    .two-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    @media (max-width: 800px) {
+        .two-cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* ======================================================
+              UNIFIED FOOTER (Same as all other pages)
+       ====================================================== */
+    footer {
+        background-color: #2B1A12;
+        border-top: 4px solid #563A27;
+        color: #F8EDE3;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER (consistent across all pages) -->
+<header>
+    <nav>
+        <div class="logo">🐾 Loving Homes</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facilities3.html">Facilities</a></li>
+            <li><a href="packages2.html">Packages</a></li>
+            <li><a href="contactpage.html">Contact Us</a></li>
+            <li><a href="newaboutus.html">About Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="bookingpage.html">Booking</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="page-title">
+    <h1>Our Luxury Dog Packages</h1>
+</div>
+
+<div class="packages-container">
+
+    <!-- PREMIUM PACKAGE -->
+    <div class="package-card">
+        <div class="package-title">Premium Package</div>
+        <ul>
+            <li>Four walks/activities per day</li>
+            <li>Private grass area</li>
+            <li>Daily updates and photos</li>
+            <li>Custom treats as agreed with owner</li>
+        </ul>
+        <button class="package-btn">ENQUIRE NOW</button>
+    </div>
+
+    <!-- CLASSIC + DAY PACKAGE -->
+    <div class="two-cards">
+
+        <div class="package-card">
+            <div class="package-title">Classic Package</div>
+            <ul>
+                <li>Three walks/activities per day</li>
+                <li>Indoor play barn</li>
+                <li>Zen zone relaxation</li>
+                <li>Grooming session included</li>
+            </ul>
+            <button class="package-btn">BOOK CLASSIC STAY</button>
+        </div>
+
+        <div class="package-card">
+            <div class="package-title">Day Package</div>
+            <ul>
+                <li>Two walks per day</li>
+                <li>Outdoor play area</li>
+                <li>Agility track</li>
+                <li>Sand digging pit</li>
+            </ul>
+            <button class="package-btn">BOOK DAY STAY</button>
+        </div>
+
+    </div>
+
+    <!-- CUSTOM PACKAGE -->
+    <div class="package-card">
+        <div class="package-title">Custom Packages</div>
+        <ul>
+            <li>Designed for longer stays or special requirements</li>
+            <li>Contact us directly to create your own personalised package</li>
+        </ul>
+        <button class="package-btn">CONTACT US</button>
+    </div>
+
+</div>
+
+<!-- FOOTER (consistent across all pages) -->
+<footer>
+    © 2025 <strong>Loving Homes</strong> – Where Comfort Meets Care
+</footer>
+
+</body>
+</html>
